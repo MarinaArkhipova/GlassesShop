@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UITableViewController {
     
     var glasses: Array<Glasses>?
     
@@ -23,11 +23,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (glasses?.count)!;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = CustomTableViewCell.init(style:UITableViewCellStyle(rawValue: 1)! , reuseIdentifier: "reuseID")
         
