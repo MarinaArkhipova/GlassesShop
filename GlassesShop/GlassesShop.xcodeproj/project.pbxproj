@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84BC8DF61D2BCEC100AD1977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC8DF51D2BCEC100AD1977 /* AppDelegate.swift */; };
+		84BC8DF81D2BCEC100AD1977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC8DF71D2BCEC100AD1977 /* ViewController.swift */; };
+		84BC8DFB1D2BCEC100AD1977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BC8DF91D2BCEC100AD1977 /* Main.storyboard */; };
+		84BC8DFD1D2BCEC100AD1977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BC8DFC1D2BCEC100AD1977 /* Assets.xcassets */; };
+		84BC8E001D2BCEC100AD1977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BC8DFE1D2BCEC100AD1977 /* LaunchScreen.storyboard */; };
+		84BC8E081D2BCF2E00AD1977 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC8E071D2BCF2E00AD1977 /* CustomTableViewCell.swift */; };
+		84BC8E0A1D2BCF4F00AD1977 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC8E091D2BCF4F00AD1977 /* Price.swift */; };
+		84BC8E0C1D2BCFBC00AD1977 /* Glasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC8E0B1D2BCFBC00AD1977 /* Glasses.swift */; };
+		84BC8E0E1D2BCFD300AD1977 /* Glass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC8E0D1D2BCFD300AD1977 /* Glass.swift */; };
+		84BC8E101D2BCFE900AD1977 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC8E0F1D2BCFE900AD1977 /* Frame.swift */; };
+		84BC8E121D2BD00500AD1977 /* GlassesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC8E111D2BD00500AD1977 /* GlassesFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84BC8DF21D2BCEC100AD1977 /* GlassesShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassesShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BC8DF51D2BCEC100AD1977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84BC8DF71D2BCEC100AD1977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84BC8DFA1D2BCEC100AD1977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84BC8DFC1D2BCEC100AD1977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84BC8DFF1D2BCEC100AD1977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BC8E011D2BCEC100AD1977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BC8E071D2BCF2E00AD1977 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		84BC8E091D2BCF4F00AD1977 /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		84BC8E0B1D2BCFBC00AD1977 /* Glasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Glasses.swift; sourceTree = "<group>"; };
+		84BC8E0D1D2BCFD300AD1977 /* Glass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Glass.swift; sourceTree = "<group>"; };
+		84BC8E0F1D2BCFE900AD1977 /* Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		84BC8E111D2BD00500AD1977 /* GlassesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassesFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BC8DEF1D2BCEC100AD1977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84BC8DE91D2BCEC100AD1977 = {
+			isa = PBXGroup;
+			children = (
+				84BC8DF41D2BCEC100AD1977 /* GlassesShop */,
+				84BC8DF31D2BCEC100AD1977 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84BC8DF31D2BCEC100AD1977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BC8DF21D2BCEC100AD1977 /* GlassesShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BC8DF41D2BCEC100AD1977 /* GlassesShop */ = {
+			isa = PBXGroup;
+			children = (
+				84BC8DF51D2BCEC100AD1977 /* AppDelegate.swift */,
+				84BC8DF71D2BCEC100AD1977 /* ViewController.swift */,
+				84BC8E071D2BCF2E00AD1977 /* CustomTableViewCell.swift */,
+				84BC8DF91D2BCEC100AD1977 /* Main.storyboard */,
+				84BC8DFC1D2BCEC100AD1977 /* Assets.xcassets */,
+				84BC8DFE1D2BCEC100AD1977 /* LaunchScreen.storyboard */,
+				84BC8E011D2BCEC100AD1977 /* Info.plist */,
+				84BC8E091D2BCF4F00AD1977 /* Price.swift */,
+				84BC8E0B1D2BCFBC00AD1977 /* Glasses.swift */,
+				84BC8E0D1D2BCFD300AD1977 /* Glass.swift */,
+				84BC8E0F1D2BCFE900AD1977 /* Frame.swift */,
+				84BC8E111D2BD00500AD1977 /* GlassesFactory.swift */,
+			);
+			path = GlassesShop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BC8DF11D2BCEC100AD1977 /* GlassesShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BC8E041D2BCEC100AD1977 /* Build configuration list for PBXNativeTarget "GlassesShop" */;
+			buildPhases = (
+				84BC8DEE1D2BCEC100AD1977 /* Sources */,
+				84BC8DEF1D2BCEC100AD1977 /* Frameworks */,
+				84BC8DF01D2BCEC100AD1977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlassesShop;
+			productName = GlassesShop;
+			productReference = 84BC8DF21D2BCEC100AD1977 /* GlassesShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BC8DEA1D2BCEC100AD1977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					84BC8DF11D2BCEC100AD1977 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 84BC8DED1D2BCEC100AD1977 /* Build configuration list for PBXProject "GlassesShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84BC8DE91D2BCEC100AD1977;
+			productRefGroup = 84BC8DF31D2BCEC100AD1977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BC8DF11D2BCEC100AD1977 /* GlassesShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BC8DF01D2BCEC100AD1977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BC8E001D2BCEC100AD1977 /* LaunchScreen.storyboard in Resources */,
+				84BC8DFD1D2BCEC100AD1977 /* Assets.xcassets in Resources */,
+				84BC8DFB1D2BCEC100AD1977 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BC8DEE1D2BCEC100AD1977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BC8E081D2BCF2E00AD1977 /* CustomTableViewCell.swift in Sources */,
+				84BC8E121D2BD00500AD1977 /* GlassesFactory.swift in Sources */,
+				84BC8E0A1D2BCF4F00AD1977 /* Price.swift in Sources */,
+				84BC8E0E1D2BCFD300AD1977 /* Glass.swift in Sources */,
+				84BC8DF81D2BCEC100AD1977 /* ViewController.swift in Sources */,
+				84BC8E101D2BCFE900AD1977 /* Frame.swift in Sources */,
+				84BC8DF61D2BCEC100AD1977 /* AppDelegate.swift in Sources */,
+				84BC8E0C1D2BCFBC00AD1977 /* Glasses.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84BC8DF91D2BCEC100AD1977 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BC8DFA1D2BCEC100AD1977 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84BC8DFE1D2BCEC100AD1977 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BC8DFF1D2BCEC100AD1977 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84BC8E021D2BCEC100AD1977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84BC8E031D2BCEC100AD1977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BC8E051D2BCEC100AD1977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GlassesShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.GlassesShop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84BC8E061D2BCEC100AD1977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GlassesShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.GlassesShop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BC8DED1D2BCEC100AD1977 /* Build configuration list for PBXProject "GlassesShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BC8E021D2BCEC100AD1977 /* Debug */,
+				84BC8E031D2BCEC100AD1977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BC8E041D2BCEC100AD1977 /* Build configuration list for PBXNativeTarget "GlassesShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BC8E051D2BCEC100AD1977 /* Debug */,
+				84BC8E061D2BCEC100AD1977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84BC8DEA1D2BCEC100AD1977 /* Project object */;
+}
