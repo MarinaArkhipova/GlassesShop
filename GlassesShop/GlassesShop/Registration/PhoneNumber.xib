@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneNumber" customModule="GlassesShop" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="GWk-NG-xuS" id="1sh-mI-kr6"/>
+                <outlet property="title" destination="KjB-xg-tdl" id="ysa-Oj-typ"/>
+                <outlet property="validationMessage" destination="gyQ-E0-JMD" id="JKu-6P-kv1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="214"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjB-xg-tdl">
+                    <rect key="frame" x="30" y="30" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-NG-xuS">
+                    <rect key="frame" x="28" y="58" width="200" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="UI6-7m-ner"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldEditingDidEnd:" destination="-1" eventType="editingDidEnd" id="Kyx-K2-zkp"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyQ-E0-JMD">
+                    <rect key="frame" x="30" y="89" width="200" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="M2s-7z-ZK9"/>
+                        <constraint firstAttribute="width" constant="200" id="Shd-f4-nUL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.93725490199999995" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="GWk-NG-xuS" firstAttribute="top" secondItem="KjB-xg-tdl" secondAttribute="bottom" constant="7.5" id="0YS-Df-mjQ"/>
+                <constraint firstItem="KjB-xg-tdl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="95A-jv-jHn"/>
+                <constraint firstItem="GWk-NG-xuS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="AeI-R3-jPb"/>
+                <constraint firstItem="gyQ-E0-JMD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="Das-Cw-l4g"/>
+                <constraint firstItem="gyQ-E0-JMD" firstAttribute="top" secondItem="GWk-NG-xuS" secondAttribute="bottom" constant="1" id="Mkq-Ls-u6J"/>
+                <constraint firstItem="KjB-xg-tdl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="oVe-0m-Pna"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="204.5" y="396"/>
+        </view>
+    </objects>
+</document>

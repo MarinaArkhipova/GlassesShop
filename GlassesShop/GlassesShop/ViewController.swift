@@ -14,8 +14,15 @@ class ViewController: UITableViewController {
     
     var glasses: Array<Glasses>?
     
+    override init(style: UITableViewStyle) {
+        super.init(style: UITableViewStyle.Plain)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
-    // MARK: LyfeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         glasses = GlassesFactory.createGlasses(15)
@@ -40,5 +47,7 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    
+   
 }
 
