@@ -21,70 +21,130 @@ class CustomTableViewCell: UITableViewCell {
     }
     
     var titleLabel: UILabel?
-    var rowPriceLabel: UILabel?
-    var actualPriceLabel: UILabel?
+    var newPriceLabel: UILabel?
+    var oldPriceLabel: UILabel?
+    var name: UILabel?
+    var picture: UIImageView?
     
     
     func configureSubviews() {
         self.titleLabel = UILabel.init()
         self.contentView.addSubview(self.titleLabel!)
-        self.rowPriceLabel = UILabel.init()
-        self.contentView.addSubview(self.rowPriceLabel!)
-        self.actualPriceLabel = UILabel.init()
-        self.contentView.addSubview(self.actualPriceLabel!)
+        self.newPriceLabel = UILabel.init()
+        self.contentView.addSubview(self.newPriceLabel!)
+        self.oldPriceLabel = UILabel.init()
+        self.contentView.addSubview(self.oldPriceLabel!)
+        self.name = UILabel.init()
+        self.contentView.addSubview(self.name!)
     }
     
     
-    func configureCell(withTitle title: String, andPrice price: Price) {
+    func configureCell(withTitle title: String, andPrice price: Price, andImage image: UIImage) {
         self.titleLabel?.text = title
-        self.rowPriceLabel?.text =  String(price.amout) + " " + price.currency
+        self.newPriceLabel?.text =  price.calculateDiscount()
         if (price.discount > 0) {
-            self.actualPriceLabel?.text = self.calculateDiscount(withPrice: price) + " " + price.currency
+            self.oldPriceLabel?.text = String(price.amout) + " " + price.currency
         } else {
-            self.actualPriceLabel?.text = nil;
+            self.oldPriceLabel?.text = nil;
         }
+        
+        self.picture = UIImageView(image: image)
+        self.contentView.addSubview(self.picture!)
         self.setNeedsLayout()
         
         //set font size for price
-        self.rowPriceLabel?.font = rowPriceLabel!.font.fontWithSize(10)
-        self.actualPriceLabel?.font = actualPriceLabel!.font.fontWithSize(10)
-    }
-    
-    
-    func calculateDiscount(withPrice price: Price) -> String {
-        var actualPrice: Double = 0
-        if (price.discount != 0) {
-            let k0: Double  = (Double(price.discount)/100.0)
-            actualPrice = price.amout - (price.amout * k0)
-        }
+        self.newPriceLabel?.font = oldPriceLabel!.font.fontWithSize(12)
+        self.oldPriceLabel?.font = newPriceLabel!.font.fontWithSize(12)
         
-        return String(actualPrice)
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: (self.oldPriceLabel?.text)!)
+        
+        attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
+        self.oldPriceLabel?.attributedText = attributeString
     }
+    
+
     
     override func layoutSubviews() {
-        //size and position of name
-        let titleViewSize: CGSize = (self.titleLabel?.sizeThatFits(CGSizeMake(CGFloat.max, CGFloat.max)))!
-        self.titleLabel?.frame = CGRectMake(10, 20, titleViewSize.width, titleViewSize.height)
+        
+        //ger size of picture
+        
+        let imageWidth: CGFloat = (self.picture?.image?.size.width)!/4
+        let imageHeight: CGFloat = (self.picture?.image?.size.height)!/4
+        let yOffset: CGFloat = (self.bounds.size.height - imageHeight)/4
+        self.picture?.frame = CGRectMake(0, yOffset, imageWidth,imageHeight)
         
         //get size of price
-        let rowPriceLabelSize: CGSize = (self.rowPriceLabel?.sizeThatFits(CGSizeMake(CGFloat.max, CGFloat.max)))!
+        let newPriceLabelSize: CGSize = (self.newPriceLabel?.sizeThatFits(CGSizeMake(CGFloat.max, CGFloat.max)))!
         //get size of sale price
-        let actualPriceLabelSize: CGSize = (self.actualPriceLabel?.sizeThatFits(CGSizeMake(CGFloat.max, CGFloat.max)))!
+        let oldPriceLabelSize: CGSize = (self.oldPriceLabel?.sizeThatFits(CGSizeMake(CGFloat.max, CGFloat.max)))!
         
-        //get screen width
-        let bounds = UIScreen.mainScreen().bounds
-        let screenWidth = bounds.size.width
+        
+        
+       
+        
+        
+
+        //get cell width
+        //let bounds = UIScreen.mainScreen().bounds
+        //let screenWidth = bounds.size.width
+        
+        let w = self.bounds.size.width
+    
+
+        //get right position
+        
+        let rightPositionPrice = w - newPriceLabelSize.width - 10
+        let rightPositionActualPrice = w - oldPriceLabelSize.width - 10
+        
+        let maxPriceWidth = max(newPriceLabelSize.width, oldPriceLabelSize.width)
+        
+        let rightPositionTitle = w  - imageWidth - maxPriceWidth
+        
+        self.newPriceLabel?.frame = CGRectMake(rightPositionPrice, 15, newPriceLabelSize.width, newPriceLabelSize.height)
+        
+        self.oldPriceLabel?.frame = CGRectMake(rightPositionActualPrice, 25, oldPriceLabelSize.width, oldPriceLabelSize.height)
+        
+        
+        
+        // title
+        let titleSize: CGSize = (self.titleLabel?.sizeThatFits(CGSizeMake(CGFloat.max, CGFloat.max)))!
+        let leftIdent :CGFloat = imageWidth + 5
+        self.titleLabel?.frame = CGRectMake(leftIdent ,25, rightPositionTitle, titleSize.height)
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         //get right position
-        let rightPositionPrice = screenWidth - rowPriceLabelSize.width - 10
-        let rightPositionActualPrice = screenWidth - actualPriceLabelSize.width - 10
+        //let rightPositionPrice = screenWidth - newPriceLabelSize.width - 10
+        //let rightPositionActualPrice = screenWidth - oldPriceLabelSize.width - 10
+        //let rightPositionTittle = screenWidth - titleViewSize.width - 95
+        
+    
+        //self.newPriceLabel?.frame = CGRectMake(rightPositionPrice, 15, newPriceLabelSize.width, newPriceLabelSize.height)
+        
+        //self.oldPriceLabel?.frame = CGRectMake(rightPositionActualPrice, 25, oldPriceLabelSize.width, oldPriceLabelSize.height)
+        
+        //self.titleLabel?.frame = CGRectMake(rightPositionTittle,25, titleViewSize.width, titleViewSize.height)
+    
+        
+        //size and position of name
         
         
-        self.rowPriceLabel?.frame = CGRectMake(rightPositionPrice, 15, rowPriceLabelSize.width, rowPriceLabelSize.height)
         
-        self.actualPriceLabel?.frame = CGRectMake(rightPositionActualPrice, 25, actualPriceLabelSize.width, actualPriceLabelSize.height)
+        //let titleViewSize: CGSize = (self.titleLabel?.sizeThatFits(CGSizeMake(CGFloat.max, CGFloat.max)))!
+        //self.titleLabel?.frame = CGRectMake(10, 20, titleViewSize.width, titleViewSize.height)
+        
+        // let rightPositionPicture = screenWidth - pictureViewSize.width - 90
+        
+//         self.picture?.frame = CGRectMake(0, 25, pictureViewSize.width, pictureViewSize.height)
+        
+        
     }
-    
-    
-    
 }
+    

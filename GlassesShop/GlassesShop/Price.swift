@@ -24,6 +24,18 @@ class Price: NSObject {
         self.currency = currency
         self.discount = discount
     }
+    
+    
+    func calculateDiscount() -> String {
+        var actualPrice: Double = 0
+        if (self.discount != 0) {
+            let k0: Double  = (Double(self.discount)/100.0)
+            actualPrice = self.amout - (self.amout * k0)
+        }
+        
+        return String(actualPrice)
+    }
+
 }
 
 

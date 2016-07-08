@@ -18,6 +18,8 @@ class GlassesFactory {
             let isSecond: Bool = (counter % 2 == 0)
             let discountType: GlassesType = self.configureGlasses(isSecond)
             glassesPair.price = self.configurePrice(accordingToDiscountType: discountType)
+            glassesPair.name = "Ray Ben"
+            glassesPair.image = UIImage(named: "1 glass")
             glasses.append(glassesPair)
             counter = counter + 1
         }
@@ -35,7 +37,7 @@ class GlassesFactory {
     static func composeGlasses() -> Glasses {
         let glassComponent: Glass = self.createGlass(UIColor.brownColor(), size: CGSizeMake(5, 3), dioptries: 0)
         let frameComponent: Frame = self.createFrame(UIColor.yellowColor(), shape: "Aviator", material: "Iron")
-        return Glasses.init(glass: glassComponent, frame: frameComponent, name: "dfdf", description: "fdfdf")
+        return Glasses.init(glass: glassComponent, frame: frameComponent, name: "dfdf", description: "fdfdf", image: UIImage(named: "1 glass")!)
     }
     
     static func configureGlasses (everySecond: Bool) -> GlassesType {
