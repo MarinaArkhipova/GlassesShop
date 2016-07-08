@@ -68,9 +68,9 @@ class CustomTableViewCell: UITableViewCell {
         
         //ger size of picture
         
-        let imageWidth: CGFloat = (self.picture?.image?.size.width)!/4
-        let imageHeight: CGFloat = (self.picture?.image?.size.height)!/4
-        let yOffset: CGFloat = (self.bounds.size.height - imageHeight)/4
+        let imageWidth: CGFloat = (self.picture?.image?.size.width)!
+        let imageHeight: CGFloat = (self.picture?.image?.size.height)!
+        let yOffset: CGFloat = (self.bounds.size.height - imageHeight)
         self.picture?.frame = CGRectMake(0, yOffset, imageWidth,imageHeight)
         
         //get size of price
@@ -78,12 +78,6 @@ class CustomTableViewCell: UITableViewCell {
         //get size of sale price
         let oldPriceLabelSize: CGSize = (self.oldPriceLabel?.sizeThatFits(CGSizeMake(CGFloat.max, CGFloat.max)))!
         
-        
-        
-       
-        
-        
-
         //get cell width
         //let bounds = UIScreen.mainScreen().bounds
         //let screenWidth = bounds.size.width

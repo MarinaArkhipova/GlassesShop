@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>5 glass</string>
+		<string>Trendy</string>
+		<integer>100</integer>
+		<string>CZK</string>
+		<integer>80</integer>
+		<string>Detaild info will be added later</string>
+	</array>
+	<array>
+		<string>4 glass</string>
+		<string>Ray Bob</string>
+		<integer>109</integer>
+		<string>HRK</string>
+		<integer>80</integer>
+		<string>Detaild info will be added later</string>
+	</array>
+	<array>
+		<string>2 glass</string>
+		<string>Ray Ben</string>
+		<integer>100</integer>
+		<string>CZK</string>
+		<integer>80</integer>
+		<string>Detaild info will be added later</string>
+	</array>
+	<array>
+		<string>1 glass</string>
+		<string>Ray Beb</string>
+		<integer>200</integer>
+		<string>RUB</string>
+		<integer>40</integer>
+		<string>Detaild info will be added later</string>
+	</array>
+	<array>
+		<string>1 glass</string>
+		<string>Ray Ben</string>
+		<integer>100</integer>
+		<string>CZK</string>
+		<integer>80</integer>
+		<string>Detaild info will be added later</string>
+	</array>
+	<array>
+		<string>3 glass</string>
+		<string>Ray Gen</string>
+		<integer>45</integer>
+		<string>RTY</string>
+		<integer>80</integer>
+		<string>Detaild info will be added later</string>
+	</array>
+	<array>
+		<string>2 glass</string>
+		<string>Ray Ben</string>
+		<integer>100</integer>
+		<string>CZK</string>
+		<integer>80</integer>
+		<string>Detaild info will be added later</string>
+	</array>
+	<array>
+		<string>5 glass</string>
+		<string>Trendy Geek</string>
+		<integer>4545</integer>
+		<string>HTY</string>
+		<integer>75</integer>
+		<string>Detaild info will be added later</string>
+	</array>
+	<array>
+		<string>3 glass</string>
+		<string>Trendy Ben</string>
+		<integer>1000</integer>
+		<string>CZK</string>
+		<integer>20</integer>
+		<string>Detaild info will be added later</string>
+	</array>
+</array>
+</plist>

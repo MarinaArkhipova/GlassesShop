@@ -21,7 +21,9 @@
 		9C4BF3B21D2EA64E009188DE /* UserName.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C4BF3B11D2EA64E009188DE /* UserName.xib */; };
 		9C4BF3B41D2EB827009188DE /* PhoneNumber.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C4BF3B31D2EB827009188DE /* PhoneNumber.xib */; };
 		9C4BF3B61D2EB83C009188DE /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BF3B51D2EB83C009188DE /* PhoneNumber.swift */; };
-		9C4BF3B91D2FD2F1009188DE /* GlassesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BF3B81D2FD2F1009188DE /* GlassesListViewController.swift */; };
+		9C4BF3BD1D2FE64E009188DE /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C4BF3BC1D2FE64E009188DE /* data.plist */; };
+		9C4BF3BF1D2FE858009188DE /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BF3BE1D2FE858009188DE /* DataMapper.swift */; };
+		9C4BF3C31D2FED26009188DE /* GlassesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4BF3C21D2FED26009188DE /* GlassesData.swift */; };
 		9C8AABF31D2BD96A0017DCA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8AABF21D2BD96A0017DCA9 /* AppDelegate.swift */; };
 		9C8AABF91D2BE6BC0017DCA9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8AABF71D2BE6BC0017DCA9 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +45,9 @@
 		9C4BF3B11D2EA64E009188DE /* UserName.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserName.xib; path = Registration/UserName.xib; sourceTree = "<group>"; };
 		9C4BF3B31D2EB827009188DE /* PhoneNumber.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhoneNumber.xib; path = Registration/PhoneNumber.xib; sourceTree = "<group>"; };
 		9C4BF3B51D2EB83C009188DE /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = Registration/PhoneNumber.swift; sourceTree = "<group>"; };
-		9C4BF3B81D2FD2F1009188DE /* GlassesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlassesListViewController.swift; path = GlassesList/GlassesListViewController.swift; sourceTree = "<group>"; };
+		9C4BF3BC1D2FE64E009188DE /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = data.plist; path = Data/data.plist; sourceTree = "<group>"; };
+		9C4BF3BE1D2FE858009188DE /* DataMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataMapper.swift; path = GlassesList/DataMapper.swift; sourceTree = "<group>"; };
+		9C4BF3C21D2FED26009188DE /* GlassesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlassesData.swift; path = GlassesList/GlassesData.swift; sourceTree = "<group>"; };
 		9C8AABF21D2BD96A0017DCA9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C8AABF71D2BE6BC0017DCA9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,9 +84,9 @@
 			children = (
 				9C4BF3B71D2FC548009188DE /* GlassesList */,
 				9C2249F21D2D43C0004C2243 /* Registration */,
+				9C4BF3BB1D2FE615009188DE /* Data */,
 				9C8AABF41D2BD98C0017DCA9 /* Cells */,
 				9C8AABF11D2BD8E70017DCA9 /* Glasses */,
-				84BC8DF71D2BCEC100AD1977 /* ViewController.swift */,
 				84BC8DFC1D2BCEC100AD1977 /* Assets.xcassets */,
 				84BC8DFE1D2BCEC100AD1977 /* LaunchScreen.storyboard */,
 				9C8AABF21D2BD96A0017DCA9 /* AppDelegate.swift */,
@@ -115,9 +119,19 @@
 		9C4BF3B71D2FC548009188DE /* GlassesList */ = {
 			isa = PBXGroup;
 			children = (
-				9C4BF3B81D2FD2F1009188DE /* GlassesListViewController.swift */,
+				84BC8DF71D2BCEC100AD1977 /* ViewController.swift */,
+				9C4BF3BE1D2FE858009188DE /* DataMapper.swift */,
 			);
 			name = GlassesList;
+			sourceTree = "<group>";
+		};
+		9C4BF3BB1D2FE615009188DE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9C4BF3BC1D2FE64E009188DE /* data.plist */,
+				9C4BF3C21D2FED26009188DE /* GlassesData.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		9C8AABF01D2BD8990017DCA9 /* Objects */ = {
@@ -206,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C4BF3BD1D2FE64E009188DE /* data.plist in Resources */,
 				9C4BF3B41D2EB827009188DE /* PhoneNumber.xib in Resources */,
 				9C4BF3B21D2EA64E009188DE /* UserName.xib in Resources */,
 				84BC8E001D2BCEC100AD1977 /* LaunchScreen.storyboard in Resources */,
@@ -228,10 +243,11 @@
 				9C8AABF91D2BE6BC0017DCA9 /* RegistrationViewController.swift in Sources */,
 				84BC8E0A1D2BCF4F00AD1977 /* Price.swift in Sources */,
 				84BC8E0E1D2BCFD300AD1977 /* Glass.swift in Sources */,
-				9C4BF3B91D2FD2F1009188DE /* GlassesListViewController.swift in Sources */,
 				84BC8DF81D2BCEC100AD1977 /* ViewController.swift in Sources */,
 				84BC8E101D2BCFE900AD1977 /* Frame.swift in Sources */,
+				9C4BF3C31D2FED26009188DE /* GlassesData.swift in Sources */,
 				84BC8E0C1D2BCFBC00AD1977 /* Glasses.swift in Sources */,
+				9C4BF3BF1D2FE858009188DE /* DataMapper.swift in Sources */,
 				9C4BF3B01D2EA5A4009188DE /* UserName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

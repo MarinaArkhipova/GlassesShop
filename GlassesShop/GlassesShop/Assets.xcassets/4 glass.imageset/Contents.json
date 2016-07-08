@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "Sonnenbrille__Unisex_-_Herrenbrillen_-_Sonnenbrillen_-_Accessoires_-_Collection_-_Mercedes-Benz_Shop_Deutschland_-_Google_Chrome_2014-11-23_20.19.22.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Sonnenbrille__Unisex_-_Herrenbrillen_-_Sonnenbrillen_-_Accessoires_-_Collection_-_Mercedes-Benz_Shop_Deutschland_-_Google_Chrome_2014-11-23_20.19.22-1.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Sonnenbrille__Unisex_-_Herrenbrillen_-_Sonnenbrillen_-_Accessoires_-_Collection_-_Mercedes-Benz_Shop_Deutschland_-_Google_Chrome_2014-11-23_20.19.22-2.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
